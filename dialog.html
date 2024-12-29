@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog Document</title>
+        <link rel="icon" href="https://i.pinimg.com/736x/e8/c8/98/e8c898ba329a54ecf4e4914851560663.jpg">
+    </head>
+    <body>
+        <h1>Dialog Document</h1>
+        <a href="/learning_fullstack/group_2/index.html">Go back</a>
+        <hr>
+
+        <dialog open="">This is a dialog!</dialog>
+
+        <button onclick="openDialog()">Open Dialog</button>
+
+        <dialog id="dialog">
+            <h2>Dialog Box</h2>
+            <p>This is a dialog box.</p>
+            <button onclick="closeDialog()">Close Dialog</button>
+        </dialog>
+
+        <script>
+            function openDialog() {
+                document.getElementById("dialog").showModal();
+            }
+
+            function closeDialog() {
+                document.getElementById("dialog").close();
+            }
+        </script>
+</html>
